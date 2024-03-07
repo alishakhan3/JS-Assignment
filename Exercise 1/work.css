@@ -1,0 +1,53 @@
+body{
+    background-color: tan;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    color: #7a441c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 1%;
+}
+
+.container1{
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.container1 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1 form input{
+    padding: 15px;
+}
+
+.container1 .choice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.container1 .buttons{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
