@@ -1,3 +1,5 @@
+//import './work.css';
+
 var information=[];
 
 function test() {
@@ -12,6 +14,8 @@ function test() {
     var rnumber = $('#rnumber')[0].value;
     var department = $('#department')[0].value;
     var birthday = $('#birthday')[0].value;
+    var hobbies=$('#hobbies')[0].value;
+    hobbiesarray=hobbies.split(', ');
 
     var student={
         fname: fname,
@@ -20,7 +24,8 @@ function test() {
         age: age,
         department: department,
         rnumber: rnumber,
-        birthday: birthday
+        birthday: birthday,
+        hobbies: hobbiesarray
     };
 
     information.push(student);
@@ -33,7 +38,8 @@ function test() {
     + " " + rnumber[0].value + " "+ birthday[0].value);*/
         //why is it iterable
 
-   alert(`Hello ${fname} ${lname} (${department}, ${rnumber}), age ${age}, ${gender}, ${birthday}`);//backtick
+   alert(`Hello ${fname} ${lname} (${department}, ${rnumber}, age: ${age}, ${gender}, ${birthday})`);//backtick
+   alert(`Hobbies: ${hobbiesarray}`);
 };
 
 function store(){
