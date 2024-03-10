@@ -9,12 +9,9 @@
 </head>
 
 <body>
-
-
     <div class="container">
         <div class="container1">
-            <form>
-
+            <form id="myform">
                 <div class="title">
                     <h1 style="display: inline; border-bottom: 1px solid #7a441c; 
                     font-size: 33px;">HTML Form</h1>
@@ -27,15 +24,24 @@
                 <input type="text" placeholder="Last Name" id="lname" name="lname"
                     style="font-size: medium; border-radius: 10px;border-width: 1px;"><br>
 
-                <div class="choice">
-                    <label for="gender" style="font-weight: bold;">Gender: </label>
+                <label for="department"style="font-weight: bold;">Department: </label>
+                <select id="department" name="department" style="font-size: medium;">
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="CCE">CCE</option>
+                    <option value="ECE">ECE</option>
+                </select><br>
 
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
+                <p style="font-weight: bold;">Gender: </p>
 
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label> <br>
-                </div><br>
+                <div> 
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label> <br>
+                </div>
+                <br>
 
                 <input type="number" placeholder="Age" id="age" name="age" min="0" max="100" step="1"
                     style="font-size: medium; border-radius: 10px;border-width: 1px;"><br>
@@ -53,19 +59,24 @@
                 <p style="font-size: 15px;">*separate by commas</p>
 
                 <div class="buttons">
-                    <br><input type="submit" value="Submit"
-                        style="border-color: #108148; color: #108148; background-color: white; border-width: 3px; font-weight: bold; font-size: 17px; border-radius: 70px;">
-
-                    <br><input type="submit" value="Get"
-                        style="border-color:  #106e8d; color: #106e8d;background-color: white; border-width: 3px; font-weight: bold; font-size: 17px; border-radius: 70px;">
+                    <br>
+                    <input type="submit" value="Submit" onclick="test()"
+                        style="border-color: #108148; color: #108148; background-color: white; 
+                        border-width: 3px; font-weight: bold; font-size: 17px; border-radius: 70px;">
+                    
+                    <br><input type="submit" value="Get" onclick="store()"
+                        style="border-color:  #106e8d; color: #106e8d;background-color: white; 
+                        border-width: 3px; font-weight: bold; font-size: 17px; border-radius: 70px;">
                 </div>
-
-
             </form>
         </div>
     </div>
 
 </body>
 <script src="./main.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" 
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
 
 </html>

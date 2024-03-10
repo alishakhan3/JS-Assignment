@@ -38,13 +38,13 @@ body{
     padding: 15px;
 }
 
-.container1 .choice{
+/*.container1 .choice{
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     gap: 5px;
-}
+}*/
 
 .container1 .buttons{
     display: flex;
