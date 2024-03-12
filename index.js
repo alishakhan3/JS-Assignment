@@ -35,9 +35,8 @@ function test(event) {
     };
 
     information.push(student);
-    var l=information.length;
 
-    alert(`Hello ${fname} ${l}`);
+    alert(`Hello ${fname}!`);
     document.getElementById('myform').reset();
 }
 
