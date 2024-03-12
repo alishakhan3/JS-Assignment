@@ -36,7 +36,7 @@ function test(event) {
 
     information.push(student);
 
-    alert(`Hello ${fname}!`);
+    alert(`Hello ${fname}`);
     document.getElementById('myform').reset();
 }
 
